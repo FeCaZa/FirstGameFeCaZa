@@ -6,7 +6,31 @@ COLOR_MENU_OP = (250, 250, 230)
 COLOR_MENU_SELECT = (0, 255, 255)
 
 # E
-EVENT_ENEMY = pygame.USEREVENT +1
+
+ENTITY_HEALTH = {
+    'Level1Bg0': 999,
+    'Level1Bg1': 999,
+    'Level1Bg2': 999,
+    'Level1Bg3': 999,
+    'Level1Bg4': 999,
+    'Level1Bg5': 999,
+    'Level1Bg6': 999,
+    'Level1Bg7': 999,
+    'Level1Bg8': 999,
+    'Level2Bg0': 999,
+    'Level2Bg1': 999,
+    'Level2Bg2': 999,
+    'Level2Bg3': 999,
+    'Level2Bg4': 999,
+    'Player1': 300,
+    'Player1Shot': 1,
+    'Player2': 300,
+    'Player2Shot': 1,
+    'Enemy1': 50,
+    'Enemy1Shot': 1,
+    'Enemy2': 60,
+    'Enemy2Shot': 1,
+}
 
 ENTITY_SPEED = {
     'Level1Bg0': 0,
@@ -24,6 +48,8 @@ ENTITY_SPEED = {
     'Enemy2' : 2
 
 }
+
+EVENT_ENEMY = pygame.USEREVENT +1
 
 # M
 MENU_OPTION = (' Novo Jogo - 1 Jogador ',
@@ -44,7 +70,7 @@ PLAYER_KEY_RIGHT = {'Player1': pygame.K_RIGHT,
 PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
                     'Player2': pygame.K_LCTRL}
 #
-SPAW_TIME = 5000
+SPAW_TIME = 2000
 # W
 WIN_WIDTH = 1000
 WIN_HEIGHT = 561
