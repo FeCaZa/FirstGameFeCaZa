@@ -32,6 +32,14 @@ ENTITY_HEALTH = {
     'Enemy2Shot': 1,
 }
 
+EVENT_ENEMY = pygame.USEREVENT + 1
+
+ENTITY_SHOT_DELAY = {
+    'Player1': 15,
+    'Player2': 20,
+    'Enemy1': 20,
+    'Enemy2': 30
+}
 ENTITY_SPEED = {
     'Level1Bg0': 0,
     'Level1Bg1': 0,
@@ -43,14 +51,14 @@ ENTITY_SPEED = {
     'Level1Bg7': 6,
     'Level1Bg8': 7,
     'Player1': 6,
+    'Player1Shot': 6,
     'Player2': 6,
+    'Player2Shot': 6,
     'Enemy1': 3,
-    'Enemy2' : 2
-
+    'Enemy2': 2,
+    'Enemy1Shot': 6,
+    'Enemy2Shot': 8
 }
-
-EVENT_ENEMY = pygame.USEREVENT +1
-
 # M
 MENU_OPTION = (' Novo Jogo - 1 Jogador ',
                ' Novo Jogo - 2 Jogador - Cooperativo ',
@@ -67,7 +75,7 @@ PLAYER_KEY_LEFT = {'Player1': pygame.K_LEFT,
                    'Player2': pygame.K_a}
 PLAYER_KEY_RIGHT = {'Player1': pygame.K_RIGHT,
                     'Player2': pygame.K_d}
-PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
+PLAYER_KEY_SHOOT = {'Player1': pygame.K_SPACE,
                     'Player2': pygame.K_LCTRL}
 #
 SPAW_TIME = 2000
